@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arul Palaniappa S - AI/ML Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@latest/dist/umd/lucide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body class="dark">
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn" aria-label="Toggle theme">
+      <i data-lucide="moon" class="icon light-icon"></i>
+      <i data-lucide="sun" class="icon dark-icon"></i>
+    </button>
+  </div>
+
+  <!-- Particle Background -->
+  <div id="particles-js" class="particles"></div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="gradient-text">Arul Palaniappa S</h1>
+          <div class="typewriter">
+            <span id="typewriter-text"></span>
+            <span class="cursor"></span>
+          </div>
+          <p>Transforming complex data into intelligent solutions through innovative AI technologies 
+            and machine learning algorithms. Passionate about creating impactful solutions that 
+            drive technological advancement.</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i data-lucide="github" class="icon"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="icon"></i>
+            </a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+              <i data-lucide="file-text" class="icon"></i>
+            </a>
+          </div>
+          <div class="cta-buttons">
+            <button class="btn primary-btn" onclick="scrollToSection('projects')">View Projects</button>
+            <button class="btn secondary-btn" onclick="scrollToSection('contact')">Contact Me</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <!-- First rectangle - rotated slightly -->
+            <div class="rectangle rectangle-1"></div>
+            
+            <!-- Second rectangle - rotated opposite -->
+            <div class="rectangle rectangle-2"></div>
+            
+            <!-- Main image container -->
+            <div class="main-image">
+              <img src="profile.jpg" alt="Description of the new image">
+              <div class="gradient-overlay"></div>
+            </div>
+            
+            <!-- Animated pulse border -->
+            <div class="pulse-border"></div>
+          </div>
+          
+          <!-- Decorative elements -->
+          <div class="decorative-circle circle-1"></div>
+          <div class="decorative-circle circle-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="gradient-text">About Me</h2>
+        <p>Driven by a deep passion for artificial intelligence and machine learning, I thrive on transforming innovative ideas into impactful solutions. My journey in this field has been fueled by a relentless curiosity to explore how technology can solve real-world challenges. I have engaged in various projects that allowed me to apply my skills creatively, collaborating with teams to develop cutting-edge applications that push the boundaries of what's possible.</p>
+      </div>
+
+      <div class="about-cards">
+        <div class="card">
+          <h3><i data-lucide="briefcase" class="icon"></i>Experience</h3>
+          <ul>
+            <li>
+              <strong>Data Science Intern at BrainOVision (2023)</strong>
+              <p>Built ML models and improved accuracy by 15%</p>
+            </li>
+            <li>
+              <strong>Web Development Intern at CodeBind (2022)</strong>
+              <p>Created management systems using HTML, CSS, PHP, SQL</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3><i data-lucide="graduation-cap" class="icon"></i>Education</h3>
+          <ul>
+            <li>
+              <strong>B.Tech in AI & Data Science</strong>
+              <p>CGPA: 8.1</p>
+            </li>
+            <li>
+              <strong>Certifications</strong>
+              <ul class="sub-list">
+                <li>Microsoft & LinkedIn: Data Analyst</li>
+                <li>Machine Learning and AI Foundations</li>
+                <li>Advanced SQL & Database Management</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skills-section">
+        <h3>Technical Skills</h3>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h4><i data-lucide="code" class="icon"></i>Programming & Development</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i data-lucide="code" class="icon"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="database" class="icon"></i>
+                <span>SQL</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="terminal" class="icon"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="code" class="icon"></i>
+                <span>HTML/CSS</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="server" class="icon"></i>
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4><i data-lucide="brain" class="icon"></i>AI & Machine Learning</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i data-lucide="brain" class="icon"></i>
+                <span>TensorFlow</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="cpu" class="icon"></i>
+                <span>PyTorch</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="line-chart" class="icon"></i>
+                <span>Scikit-Learn</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="brain" class="icon"></i>
+                <span>Computer Vision</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="terminal" class="icon"></i>
+                <span>NLP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4><i data-lucide="database" class="icon"></i>Data Science & Tools</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i data-lucide="database" class="icon"></i>
+                <span>Pandas</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="line-chart" class="icon"></i>
+                <span>NumPy</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="cloud" class="icon"></i>
+                <span>AWS</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="server" class="icon"></i>
+                <span>Docker</span>
+              </div>
+              <div class="skill-item">
+                <i data-lucide="code" class="icon"></i>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="gradient-text">Featured Projects</h2>
+        <p>Explore my latest AI and machine learning projects, showcasing practical applications
+          of cutting-edge technology.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-category">
+              <i data-lucide="brain" class="icon"></i>
+              <span>Computer Vision</span>
+            </div>
+            <h3>Real-Time Pothole Detection</h3>
+            <p>AI Model for real-time processing of pothole detection.</p>
+            <div class="project-links">
+              <a href="https://github.com/arul0076/pothole-detection-yolov11-streamlit.git" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-category">
+              <i data-lucide="code" class="icon"></i>
+              <span>AI</span>
+            </div>
+            <h3>WhatsApp News Bot with Python</h3>
+            <p>Sends real-time job news updates to WhatsApp using Python, NewsAPI, and Twilio.</p>
+            <div class="project-links">
+              <a href="https://github.com/arul0076/Job-News-WhatsApp-Alert.git" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-category">
+              <i data-lucide="line-chart" class="icon"></i>
+              <span>Machine Learning</span>
+            </div>
+            <h3>Stock Trend Prediction Web App</h3>
+            <p>Flask app using Yahoo Finance API for ML models.</p>
+            <div class="project-links">
+              <a href="https://github.com/arul0076/Stock-Trend-Prediction-webapp.git" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-category">
+              <i data-lucide="car" class="icon"></i>
+              <span>Data Analysis</span>
+            </div>
+            <h3>Automobile Sales Analysis</h3>
+            <p>Comprehensive analysis using Python, EDA, and data visualization.</p>
+            <div class="project-links">
+              <a href="https://github.com/arul0076/Automobile-Sales-Analysis-.git" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-category">
+              <i data-lucide="code" class="icon"></i>
+              <span>Data Analysis</span>
+            </div>
+            <h3>Product Sales Analysis</h3>
+            <p>EDA and data optimization strategies using Python.</p>
+            <div class="project-links">
+              <a href="https://github.com/arul0076/DAC.git" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-category">
+              <i data-lucide="globe" class="icon"></i>
+              <span>Web App</span>
+            </div>
+            <h3>Language Translator</h3>
+            <p>A web app for translating text between multiple languages.</p>
+            <div class="project-links">
+              <a href="https://github.com/arul0076/Language-translator.git" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+              <span class="tooltip">
+                <a href="arul0076.github.io/Language-translator/" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="arrow-right" class="icon"></i>
+                </a>
+                <span class="tooltiptext">Click here to see web page</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-category">
+              <i data-lucide="terminal" class="icon"></i>
+              <span>Java</span>
+            </div>
+            <h3>Java Sorting Visualizer</h3>
+            <p>Console-based sorting algorithm visualization in Java.</p>
+            <div class="project-links">
+              <a href="https://github.com/arul0076/JavaSortingVisualizer.git" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-category">
+              <i data-lucide="shield" class="icon"></i>
+              <span>Cybersecurity</span>
+            </div>
+            <h3>CyberSecurity Project</h3>
+            <p>Focused on cybersecurity concepts under the Naan Mudhalvan initiative.</p>
+            <div class="project-links">
+              <a href="https://github.com/arul0076/NMProject.git" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Project Card for Spotify Clone -->
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-category">
+              <i data-lucide="music" class="icon"></i>
+              <span>Web Development</span>
+            </div>
+            <h3>Spotify Clone Web Page</h3>
+            <p>A frontend web page mimicking Spotify's UI using HTML, CSS, and JavaScript.</p>
+            <div class="project-links">
+              <a href="https://github.com/arul0076/Spotify_Clone.git" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+              </a>
+              <span class="tooltip">
+                <a href="arul0076.github.io/Spotify_Clone/" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="arrow-right" class="icon"></i>
+                </a>
+                <span class="tooltiptext">Click here to see web page</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="gradient-text-purple">Let's Connect</h2>
+        <p>Have a project in mind or want to discuss AI/ML opportunities? I'm always open to
+          new collaborations and interesting conversations.</p>
+      </div>
+
+      <div class="contact-container">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="your.email@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required rows="6" placeholder="Tell me about your project or opportunity..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Connect With Me</h3>
+            <div class="social-grid">
+              <a href="https://github.com/arul0076" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="github" class="icon"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/arul-palaniappa-707b97200/" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="linkedin" class="icon"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:arulpalaniappa19052004@gmail.com"><i data-lucide="mail" class="icon"></i> Email</a>
+              </a>
+              <a href="https://drive.google.com/file/d/1GSQmrVyMlE3c1pUx2pBZsXZ6X0irkpRc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="file-text" class="icon"></i> Resume
+              </a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Availability</h3>
+            <p>Currently available for:</p>
+            <ul class="availability-list">
+              <li><span class="status-dot"></span>AI/ML Internships</li>
+              <li><span class="status-dot"></span>Entry-Level Roles in Data Science & Machine Learning</li>
+              <li><span class="status-dot"></span>Research Collaboration & Projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Arul Palaniappa S. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
